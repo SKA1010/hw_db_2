@@ -49,8 +49,11 @@ ALTER USER 'sys_test'@'localhost' IDENTIFIED WITH mysql_native_password BY 'pass
 Запросы, используемые в работе:
 
 CREATE USER 'sys_temp'@'localhost' IDENTIFIED BY 'password';
+
 SELECT user FROM mysql.user;
+
 GRANT ALL PRIVILEGES ON *.* TO 'sys_temp'@'localhost';
+
 SHOW GRANTS FOR 'sys_temp'@'localhost';
 
 
